@@ -1,0 +1,75 @@
+article.heroe {
+    flex: 0 0 100%;
+    max-width: 100%;
+    >div {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        box-shadow: 0 0px 10px rgba(110, 110, 110, 0.2);
+        >header {
+            display: flex;
+            height: 250px;
+            background-color: rgba(200, 200, 200, 1);
+            background-size: cover;
+        }
+        >div {
+            flex: 1 1 100%;
+            flex-direction: column;
+            height: 250px;
+            background-color: rgba(255, 255, 255, 1);
+            padding: 25px;
+            overflow: hidden;
+            transition: all 0.5s ease-in;
+            >h3 {
+                font-size: 14px;
+                font-weight: 600;
+                margin: 0 0 15px 0;
+            }
+            >p {
+                font-size: 12px;
+                font-weight: 300;
+                margin: 0 0 10px 0;
+            }
+        }
+        &:hover {
+            box-shadow: 0 0px 15px rgba(110, 110, 110, 0.3);
+            transform: translateY(-2px);
+            transition: all 0.1s ease-out;
+        }
+    }
+}
+
+@media (max-width: 551px) {
+    article.heroe {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 552px) {
+    article.heroe {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) {
+    article.heroe {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+}
+
+@media (min-width: 1200px) {
+    article.heroe {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media (min-width: 1600px) {
+    article.heroe {
+        flex: 0 0 16.3333%;
+        max-width: 16.3333%;
+    }
+}
